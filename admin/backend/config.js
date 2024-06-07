@@ -1,0 +1,32 @@
+module.exports = {
+  port: process.env.PORT || 8003,
+  tokenTimeout: 3600,
+  appSecret: process.env.APP_SECRET || "referalio",
+  mongodb_uri: "mongodb://localhost:27017/mydb",
+  freeNumber: 50,
+  price: 99,
+  email: "admin@gmail.com",
+  password: "admin",
+  name: "jose",
+  secretKey: "awf23425wlr323kwer23kwk2k3rk",
+  initPlan: [
+    {
+      name: "Starter",
+      description: "This is the free plan.",
+      amount: 0,
+      period: "lifeTime",
+      programs: 50,
+      startson: Date.now(),
+      endson: Date.now(),
+    },
+    {
+      name: "Investor",
+      description: "This is the investor plan.",
+      amount: 99,
+      period: "lifeTime",
+      programs: 16019,
+      startson: Date.now(),
+      endson: Date.now(),
+    },
+  ],
+};
